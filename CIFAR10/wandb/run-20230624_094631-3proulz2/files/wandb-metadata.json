@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.10.4",
+    "heartbeatAt": "2023-06-24T01:46:34.866675",
+    "startedAt": "2023-06-24T01:46:31.373468",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\PycharmProject(D)\\software-Cup-B1\\CIFAR10\\train.py",
+    "codePath": "train.py",
+    "host": "DESKTOP-L1DA11E",
+    "username": "yujunyu",
+    "executable": "C:\\Users\\yujunyu\\.conda\\envs\\pytorch\\python.exe"
+}

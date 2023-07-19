@@ -1,0 +1,533 @@
+gpu_info:
+[32mcuda.is_available:True
+[32mcuda.device_count:1
+[32mcuda.device_name:NVIDIA GeForce RTX 3050 Laptop GPU
+[32mcuda.current_device:0
+datasets_info:
+[32mtrain_inputs:50000	train_labels:50000
+[32mtrain_inputs:10000	train_labels:10000
+加载网络结构
+net_structure:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 32, 32, 32]             864
+       BatchNorm2d-2           [-1, 32, 32, 32]              64
+            Conv2d-3           [-1, 32, 32, 32]           1,024
+       BatchNorm2d-4           [-1, 32, 32, 32]              64
+            Conv2d-5           [-1, 32, 32, 32]             288
+       BatchNorm2d-6           [-1, 32, 32, 32]              64
+            Conv2d-7           [-1, 16, 32, 32]             512
+       BatchNorm2d-8           [-1, 16, 32, 32]              32
+            Conv2d-9           [-1, 16, 32, 32]             512
+      BatchNorm2d-10           [-1, 16, 32, 32]              32
+            Block-11           [-1, 16, 32, 32]               0
+           Conv2d-12           [-1, 96, 32, 32]           1,536
+      BatchNorm2d-13           [-1, 96, 32, 32]             192
+           Conv2d-14           [-1, 96, 32, 32]             864
+      BatchNorm2d-15           [-1, 96, 32, 32]             192
+           Conv2d-16           [-1, 24, 32, 32]           2,304
+      BatchNorm2d-17           [-1, 24, 32, 32]              48
+           Conv2d-18           [-1, 24, 32, 32]             384
+      BatchNorm2d-19           [-1, 24, 32, 32]              48
+            Block-20           [-1, 24, 32, 32]               0
+           Conv2d-21          [-1, 144, 32, 32]           3,456
+      BatchNorm2d-22          [-1, 144, 32, 32]             288
+           Conv2d-23          [-1, 144, 32, 32]           1,296
+      BatchNorm2d-24          [-1, 144, 32, 32]             288
+           Conv2d-25           [-1, 24, 32, 32]           3,456
+      BatchNorm2d-26           [-1, 24, 32, 32]              48
+            Block-27           [-1, 24, 32, 32]               0
+           Conv2d-28          [-1, 144, 32, 32]           3,456
+      BatchNorm2d-29          [-1, 144, 32, 32]             288
+           Conv2d-30          [-1, 144, 16, 16]           1,296
+      BatchNorm2d-31          [-1, 144, 16, 16]             288
+           Conv2d-32           [-1, 32, 16, 16]           4,608
+      BatchNorm2d-33           [-1, 32, 16, 16]              64
+            Block-34           [-1, 32, 16, 16]               0
+           Conv2d-35          [-1, 192, 16, 16]           6,144
+      BatchNorm2d-36          [-1, 192, 16, 16]             384
+           Conv2d-37          [-1, 192, 16, 16]           1,728
+      BatchNorm2d-38          [-1, 192, 16, 16]             384
+           Conv2d-39           [-1, 32, 16, 16]           6,144
+      BatchNorm2d-40           [-1, 32, 16, 16]              64
+            Block-41           [-1, 32, 16, 16]               0
+           Conv2d-42          [-1, 192, 16, 16]           6,144
+      BatchNorm2d-43          [-1, 192, 16, 16]             384
+           Conv2d-44          [-1, 192, 16, 16]           1,728
+      BatchNorm2d-45          [-1, 192, 16, 16]             384
+           Conv2d-46           [-1, 32, 16, 16]           6,144
+      BatchNorm2d-47           [-1, 32, 16, 16]              64
+            Block-48           [-1, 32, 16, 16]               0
+           Conv2d-49          [-1, 192, 16, 16]           6,144
+      BatchNorm2d-50          [-1, 192, 16, 16]             384
+           Conv2d-51            [-1, 192, 8, 8]           1,728
+      BatchNorm2d-52            [-1, 192, 8, 8]             384
+           Conv2d-53             [-1, 64, 8, 8]          12,288
+      BatchNorm2d-54             [-1, 64, 8, 8]             128
+            Block-55             [-1, 64, 8, 8]               0
+           Conv2d-56            [-1, 384, 8, 8]          24,576
+      BatchNorm2d-57            [-1, 384, 8, 8]             768
+           Conv2d-58            [-1, 384, 8, 8]           3,456
+      BatchNorm2d-59            [-1, 384, 8, 8]             768
+           Conv2d-60             [-1, 64, 8, 8]          24,576
+      BatchNorm2d-61             [-1, 64, 8, 8]             128
+            Block-62             [-1, 64, 8, 8]               0
+           Conv2d-63            [-1, 384, 8, 8]          24,576
+      BatchNorm2d-64            [-1, 384, 8, 8]             768
+           Conv2d-65            [-1, 384, 8, 8]           3,456
+      BatchNorm2d-66            [-1, 384, 8, 8]             768
+           Conv2d-67             [-1, 64, 8, 8]          24,576
+      BatchNorm2d-68             [-1, 64, 8, 8]             128
+            Block-69             [-1, 64, 8, 8]               0
+           Conv2d-70            [-1, 384, 8, 8]          24,576
+      BatchNorm2d-71            [-1, 384, 8, 8]             768
+           Conv2d-72            [-1, 384, 8, 8]           3,456
+      BatchNorm2d-73            [-1, 384, 8, 8]             768
+           Conv2d-74             [-1, 64, 8, 8]          24,576
+      BatchNorm2d-75             [-1, 64, 8, 8]             128
+            Block-76             [-1, 64, 8, 8]               0
+           Conv2d-77            [-1, 384, 8, 8]          24,576
+      BatchNorm2d-78            [-1, 384, 8, 8]             768
+           Conv2d-79            [-1, 384, 8, 8]           3,456
+      BatchNorm2d-80            [-1, 384, 8, 8]             768
+           Conv2d-81             [-1, 96, 8, 8]          36,864
+      BatchNorm2d-82             [-1, 96, 8, 8]             192
+           Conv2d-83             [-1, 96, 8, 8]           6,144
+      BatchNorm2d-84             [-1, 96, 8, 8]             192
+            Block-85             [-1, 96, 8, 8]               0
+           Conv2d-86            [-1, 576, 8, 8]          55,296
+      BatchNorm2d-87            [-1, 576, 8, 8]           1,152
+           Conv2d-88            [-1, 576, 8, 8]           5,184
+      BatchNorm2d-89            [-1, 576, 8, 8]           1,152
+           Conv2d-90             [-1, 96, 8, 8]          55,296
+      BatchNorm2d-91             [-1, 96, 8, 8]             192
+            Block-92             [-1, 96, 8, 8]               0
+           Conv2d-93            [-1, 576, 8, 8]          55,296
+      BatchNorm2d-94            [-1, 576, 8, 8]           1,152
+           Conv2d-95            [-1, 576, 8, 8]           5,184
+      BatchNorm2d-96            [-1, 576, 8, 8]           1,152
+           Conv2d-97             [-1, 96, 8, 8]          55,296
+      BatchNorm2d-98             [-1, 96, 8, 8]             192
+            Block-99             [-1, 96, 8, 8]               0
+          Conv2d-100            [-1, 576, 8, 8]          55,296
+     BatchNorm2d-101            [-1, 576, 8, 8]           1,152
+          Conv2d-102            [-1, 576, 4, 4]           5,184
+     BatchNorm2d-103            [-1, 576, 4, 4]           1,152
+          Conv2d-104            [-1, 160, 4, 4]          92,160
+     BatchNorm2d-105            [-1, 160, 4, 4]             320
+           Block-106            [-1, 160, 4, 4]               0
+          Conv2d-107            [-1, 960, 4, 4]         153,600
+     BatchNorm2d-108            [-1, 960, 4, 4]           1,920
+          Conv2d-109            [-1, 960, 4, 4]           8,640
+     BatchNorm2d-110            [-1, 960, 4, 4]           1,920
+          Conv2d-111            [-1, 160, 4, 4]         153,600
+     BatchNorm2d-112            [-1, 160, 4, 4]             320
+           Block-113            [-1, 160, 4, 4]               0
+          Conv2d-114            [-1, 960, 4, 4]         153,600
+     BatchNorm2d-115            [-1, 960, 4, 4]           1,920
+          Conv2d-116            [-1, 960, 4, 4]           8,640
+     BatchNorm2d-117            [-1, 960, 4, 4]           1,920
+          Conv2d-118            [-1, 160, 4, 4]         153,600
+     BatchNorm2d-119            [-1, 160, 4, 4]             320
+           Block-120            [-1, 160, 4, 4]               0
+          Conv2d-121            [-1, 960, 4, 4]         153,600
+     BatchNorm2d-122            [-1, 960, 4, 4]           1,920
+          Conv2d-123            [-1, 960, 4, 4]           8,640
+     BatchNorm2d-124            [-1, 960, 4, 4]           1,920
+          Conv2d-125            [-1, 320, 4, 4]         307,200
+     BatchNorm2d-126            [-1, 320, 4, 4]             640
+          Conv2d-127            [-1, 320, 4, 4]          51,200
+     BatchNorm2d-128            [-1, 320, 4, 4]             640
+           Block-129            [-1, 320, 4, 4]               0
+          Conv2d-130           [-1, 1280, 4, 4]         409,600
+     BatchNorm2d-131           [-1, 1280, 4, 4]           2,560
+          Linear-132                   [-1, 10]          12,810
+================================================================
+Total params: 2,296,922
+Trainable params: 2,296,922
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 27.37
+Params size (MB): 8.76
+Estimated Total Size (MB): 36.14
+----------------------------------------------------------------
+[32mMobileNetV2(
+[32m  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[32m  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m  (layers): Sequential(
+[32m    (0): Block(
+[32m      (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+[32m      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential(
+[32m        (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      )
+[32m    )
+[32m    (1): Block(
+[32m      (conv1): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=96, bias=False)
+[32m      (bn2): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential(
+[32m        (0): Conv2d(16, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m        (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      )
+[32m    )
+[32m    (2): Block(
+[32m      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)
+[32m      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (3): Block(
+[32m      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=144, bias=False)
+[32m      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(144, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (4): Block(
+[32m      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+[32m      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (5): Block(
+[32m      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+[32m      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (6): Block(
+[32m      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=192, bias=False)
+[32m      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (7): Block(
+[32m      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+[32m      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (8): Block(
+[32m      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+[32m      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (9): Block(
+[32m      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+[32m      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (10): Block(
+[32m      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+[32m      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential(
+[32m        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      )
+[32m    )
+[32m    (11): Block(
+[32m      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+[32m      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (12): Block(
+[32m      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+[32m      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (13): Block(
+[32m      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=576, bias=False)
+[32m      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(576, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (14): Block(
+[32m      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+[32m      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (15): Block(
+[32m      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+[32m      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential()
+[32m    )
+[32m    (16): Block(
+[32m      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+[32m      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (conv3): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m      (bn3): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      (shortcut): Sequential(
+[32m        (0): Conv2d(160, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m        (1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m      )
+[32m    )
+[32m  )
+[32m  (conv2): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1), bias=False)
+[32m  (bn2): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[32m  (linear): Linear(in_features=1280, out_features=10, bias=True)
+[32m)
+初始化的学习率： 0.001
+[34m开始训练......
+第1个epoch的学习率：0.001000
+epoch:1/100 	 train_acc:44.45800018310547 	 val_acc:58.71999740600586 	 train_loss:1.495667576789856 	 val_loss:1.4149370193481445
+第2个epoch的学习率：0.001000
+epoch:2/100 	 train_acc:62.66600036621094 	 val_acc:64.5999984741211 	 train_loss:0.9450845718383789 	 val_loss:0.7229089140892029
+第3个epoch的学习率：0.000999
+epoch:3/100 	 train_acc:70.2719955444336 	 val_acc:71.91999816894531 	 train_loss:0.827308177947998 	 val_loss:0.6869015097618103
+第4个epoch的学习率：0.000998
+epoch:4/100 	 train_acc:74.99800109863281 	 val_acc:76.29000091552734 	 train_loss:0.48923158645629883 	 val_loss:0.9345104694366455
+第5个epoch的学习率：0.000996
+epoch:5/100 	 train_acc:78.20599365234375 	 val_acc:77.56999969482422 	 train_loss:0.49452775716781616 	 val_loss:0.6427492499351501
+第6个epoch的学习率：0.000994
+epoch:6/100 	 train_acc:80.17599487304688 	 val_acc:81.0999984741211 	 train_loss:0.4951631426811218 	 val_loss:0.40865567326545715
+第7个epoch的学习率：0.000991
+epoch:7/100 	 train_acc:81.59600067138672 	 val_acc:80.86000061035156 	 train_loss:0.5168267488479614 	 val_loss:0.5395750999450684
+第8个epoch的学习率：0.000988
+epoch:8/100 	 train_acc:83.14399719238281 	 val_acc:81.83000183105469 	 train_loss:0.49134689569473267 	 val_loss:0.38145312666893005
+第9个epoch的学习率：0.000984
+epoch:9/100 	 train_acc:84.16799926757812 	 val_acc:82.62000274658203 	 train_loss:0.5058689117431641 	 val_loss:0.2735355496406555
+第10个epoch的学习率：0.000980
+epoch:10/100 	 train_acc:85.11199951171875 	 val_acc:83.11000061035156 	 train_loss:0.3890446424484253 	 val_loss:0.43461835384368896
+第11个epoch的学习率：0.000976
+epoch:11/100 	 train_acc:85.85999298095703 	 val_acc:84.12999725341797 	 train_loss:0.5736818313598633 	 val_loss:0.2881743609905243
+第12个epoch的学习率：0.000970
+epoch:12/100 	 train_acc:86.75999450683594 	 val_acc:84.79999542236328 	 train_loss:0.3842405378818512 	 val_loss:0.2557520866394043
+第13个epoch的学习率：0.000965
+epoch:13/100 	 train_acc:87.4699935913086 	 val_acc:85.64999389648438 	 train_loss:0.4352942407131195 	 val_loss:0.30310502648353577
+第14个epoch的学习率：0.000959
+epoch:14/100 	 train_acc:87.90399932861328 	 val_acc:86.15999603271484 	 train_loss:0.49626827239990234 	 val_loss:0.20865561068058014
+第15个epoch的学习率：0.000952
+epoch:15/100 	 train_acc:88.6500015258789 	 val_acc:86.63999938964844 	 train_loss:0.46085262298583984 	 val_loss:0.10800843685865402
+第16个epoch的学习率：0.000946
+epoch:16/100 	 train_acc:88.8740005493164 	 val_acc:86.73999786376953 	 train_loss:0.2946435511112213 	 val_loss:0.2697259485721588
+第17个epoch的学习率：0.000938
+epoch:17/100 	 train_acc:89.46199798583984 	 val_acc:86.33999633789062 	 train_loss:0.41638222336769104 	 val_loss:0.2224854677915573
+第18个epoch的学习率：0.000930
+epoch:18/100 	 train_acc:89.86399841308594 	 val_acc:86.83999633789062 	 train_loss:0.17031100392341614 	 val_loss:0.24472562968730927
+第19个epoch的学习率：0.000922
+epoch:19/100 	 train_acc:90.20999908447266 	 val_acc:87.02999877929688 	 train_loss:0.28660303354263306 	 val_loss:0.28447234630584717
+第20个epoch的学习率：0.000914
+epoch:20/100 	 train_acc:90.6780014038086 	 val_acc:87.36000061035156 	 train_loss:0.22356708347797394 	 val_loss:0.4063616991043091
+第21个epoch的学习率：0.000905
+epoch:21/100 	 train_acc:91.02599334716797 	 val_acc:86.80999755859375 	 train_loss:0.2706618905067444 	 val_loss:0.35736680030822754
+第22个epoch的学习率：0.000895
+epoch:22/100 	 train_acc:91.36799621582031 	 val_acc:87.82999420166016 	 train_loss:0.24455443024635315 	 val_loss:0.3662548363208771
+第23个epoch的学习率：0.000885
+epoch:23/100 	 train_acc:91.79399871826172 	 val_acc:87.75999450683594 	 train_loss:0.26532748341560364 	 val_loss:0.14492550492286682
+第24个epoch的学习率：0.000875
+epoch:24/100 	 train_acc:91.86799621582031 	 val_acc:87.90999603271484 	 train_loss:0.3685597777366638 	 val_loss:0.25071799755096436
+第25个epoch的学习率：0.000864
+epoch:25/100 	 train_acc:92.28599548339844 	 val_acc:87.06999969482422 	 train_loss:0.18497072160243988 	 val_loss:0.24758318066596985
+第26个epoch的学习率：0.000854
+epoch:26/100 	 train_acc:92.56999206542969 	 val_acc:89.04999542236328 	 train_loss:0.2326085865497589 	 val_loss:0.1621183305978775
+第27个epoch的学习率：0.000842
+epoch:27/100 	 train_acc:92.97599792480469 	 val_acc:88.63999938964844 	 train_loss:0.232090562582016 	 val_loss:0.07136335223913193
+第28个epoch的学习率：0.000831
+epoch:28/100 	 train_acc:93.23999786376953 	 val_acc:87.93000030517578 	 train_loss:0.33244162797927856 	 val_loss:0.24435172975063324
+第29个epoch的学习率：0.000819
+epoch:29/100 	 train_acc:93.4020004272461 	 val_acc:89.0 	 train_loss:0.21665501594543457 	 val_loss:0.20398175716400146
+第30个epoch的学习率：0.000806
+epoch:30/100 	 train_acc:93.71199798583984 	 val_acc:89.58999633789062 	 train_loss:0.2051839381456375 	 val_loss:0.09957243502140045
+第31个epoch的学习率：0.000794
+epoch:31/100 	 train_acc:94.02399444580078 	 val_acc:88.0999984741211 	 train_loss:0.0972217246890068 	 val_loss:0.27625933289527893
+第32个epoch的学习率：0.000781
+epoch:32/100 	 train_acc:94.18199920654297 	 val_acc:88.86000061035156 	 train_loss:0.305889368057251 	 val_loss:0.27056145668029785
+第33个epoch的学习率：0.000768
+epoch:33/100 	 train_acc:94.25999450683594 	 val_acc:89.62999725341797 	 train_loss:0.11463838815689087 	 val_loss:0.1965702772140503
+第34个epoch的学习率：0.000755
+epoch:34/100 	 train_acc:94.73999786376953 	 val_acc:89.22000122070312 	 train_loss:0.1707914173603058 	 val_loss:0.053796447813510895
+第35个epoch的学习率：0.000741
+epoch:35/100 	 train_acc:94.93399810791016 	 val_acc:89.55999755859375 	 train_loss:0.1861966848373413 	 val_loss:0.314523845911026
+第36个epoch的学习率：0.000727
+epoch:36/100 	 train_acc:95.093994140625 	 val_acc:89.37000274658203 	 train_loss:0.11699919402599335 	 val_loss:0.12307404726743698
+第37个epoch的学习率：0.000713
+epoch:37/100 	 train_acc:95.2719955444336 	 val_acc:89.81999969482422 	 train_loss:0.12705740332603455 	 val_loss:0.04953226447105408
+第38个epoch的学习率：0.000699
+epoch:38/100 	 train_acc:95.70999908447266 	 val_acc:89.52999877929688 	 train_loss:0.15579132735729218 	 val_loss:0.49589774012565613
+第39个epoch的学习率：0.000684
+epoch:39/100 	 train_acc:95.73799896240234 	 val_acc:89.86000061035156 	 train_loss:0.08560595661401749 	 val_loss:0.21948957443237305
+第40个epoch的学习率：0.000669
+epoch:40/100 	 train_acc:95.76000213623047 	 val_acc:89.48999786376953 	 train_loss:0.0801529735326767 	 val_loss:0.010829156264662743
+第41个epoch的学习率：0.000655
+epoch:41/100 	 train_acc:96.24199676513672 	 val_acc:90.05000305175781 	 train_loss:0.16402938961982727 	 val_loss:0.41744154691696167
+第42个epoch的学习率：0.000639
+epoch:42/100 	 train_acc:96.33399963378906 	 val_acc:90.16000366210938 	 train_loss:0.10155346244573593 	 val_loss:0.39873090386390686
+第43个epoch的学习率：0.000624
+epoch:43/100 	 train_acc:96.18599700927734 	 val_acc:90.16999816894531 	 train_loss:0.07635195553302765 	 val_loss:0.47255226969718933
+第44个epoch的学习率：0.000609
+epoch:44/100 	 train_acc:96.50199890136719 	 val_acc:90.41000366210938 	 train_loss:0.08327392488718033 	 val_loss:0.5731684565544128
+第45个epoch的学习率：0.000594
+epoch:45/100 	 train_acc:96.67399597167969 	 val_acc:90.18000030517578 	 train_loss:0.11830990016460419 	 val_loss:0.44834476709365845
+第46个epoch的学习率：0.000578
+epoch:46/100 	 train_acc:96.83799743652344 	 val_acc:90.31999969482422 	 train_loss:0.09599952399730682 	 val_loss:0.15958814322948456
+第47个epoch的学习率：0.000563
+epoch:47/100 	 train_acc:97.0719985961914 	 val_acc:90.58000183105469 	 train_loss:0.06821638345718384 	 val_loss:0.18698740005493164
+第48个epoch的学习率：0.000547
+epoch:48/100 	 train_acc:97.19400024414062 	 val_acc:90.2300033569336 	 train_loss:0.07386039197444916 	 val_loss:0.4313647150993347
+第49个epoch的学习率：0.000531
+epoch:49/100 	 train_acc:97.43799591064453 	 val_acc:90.48999786376953 	 train_loss:0.1173165887594223 	 val_loss:0.5391970276832581
+第50个epoch的学习率：0.000516
+epoch:50/100 	 train_acc:97.35399627685547 	 val_acc:90.34000396728516 	 train_loss:0.08395145833492279 	 val_loss:0.626955509185791
+第51个epoch的学习率：0.000500
+epoch:51/100 	 train_acc:97.51799774169922 	 val_acc:90.73999786376953 	 train_loss:0.06738412380218506 	 val_loss:0.6625250577926636
+第52个epoch的学习率：0.000484
+epoch:52/100 	 train_acc:97.75799560546875 	 val_acc:90.56999969482422 	 train_loss:0.11824001371860504 	 val_loss:0.30141374468803406
+第53个epoch的学习率：0.000469
+epoch:53/100 	 train_acc:97.89199829101562 	 val_acc:90.38999938964844 	 train_loss:0.09688573330640793 	 val_loss:0.2964284420013428
+第54个epoch的学习率：0.000453
+epoch:54/100 	 train_acc:98.00199890136719 	 val_acc:90.77999877929688 	 train_loss:0.015461334958672523 	 val_loss:0.5737780332565308
+第55个epoch的学习率：0.000437
+epoch:55/100 	 train_acc:98.08200073242188 	 val_acc:90.63999938964844 	 train_loss:0.09261967986822128 	 val_loss:0.41400146484375
+第56个epoch的学习率：0.000422
+epoch:56/100 	 train_acc:98.03199768066406 	 val_acc:90.26000213623047 	 train_loss:0.08475981652736664 	 val_loss:0.24908961355686188
+第57个epoch的学习率：0.000406
+epoch:57/100 	 train_acc:98.23599243164062 	 val_acc:91.0 	 train_loss:0.07272995263338089 	 val_loss:0.44524165987968445
+第58个epoch的学习率：0.000391
+epoch:58/100 	 train_acc:98.20599365234375 	 val_acc:90.7699966430664 	 train_loss:0.004185629077255726 	 val_loss:0.5086531639099121
+第59个epoch的学习率：0.000376
+epoch:59/100 	 train_acc:98.52999877929688 	 val_acc:90.97000122070312 	 train_loss:0.08129752427339554 	 val_loss:0.41292595863342285
+第60个epoch的学习率：0.000361
+epoch:60/100 	 train_acc:98.60399627685547 	 val_acc:91.0999984741211 	 train_loss:0.04339737445116043 	 val_loss:0.3843209147453308
+第61个epoch的学习率：0.000345
+epoch:61/100 	 train_acc:98.58599853515625 	 val_acc:90.94000244140625 	 train_loss:0.06357176601886749 	 val_loss:0.3954683542251587
+第62个epoch的学习率：0.000331
+epoch:62/100 	 train_acc:98.70199584960938 	 val_acc:91.62999725341797 	 train_loss:0.03804389387369156 	 val_loss:0.23580294847488403
+第63个epoch的学习率：0.000316
+epoch:63/100 	 train_acc:98.7719955444336 	 val_acc:91.42999267578125 	 train_loss:0.027885843068361282 	 val_loss:0.1757645457983017
+第64个epoch的学习率：0.000301
+epoch:64/100 	 train_acc:98.95199584960938 	 val_acc:91.32999420166016 	 train_loss:0.01861441507935524 	 val_loss:0.4570341408252716
+第65个epoch的学习率：0.000287
+epoch:65/100 	 train_acc:98.947998046875 	 val_acc:91.12999725341797 	 train_loss:0.022799041122198105 	 val_loss:0.19515618681907654
+第66个epoch的学习率：0.000273
+epoch:66/100 	 train_acc:99.09199523925781 	 val_acc:91.16999816894531 	 train_loss:0.003649162594228983 	 val_loss:0.25451362133026123
+第67个epoch的学习率：0.000259
+epoch:67/100 	 train_acc:99.0739974975586 	 val_acc:91.39999389648438 	 train_loss:0.038722701370716095 	 val_loss:0.38591253757476807
+第68个epoch的学习率：0.000245
+epoch:68/100 	 train_acc:99.16399383544922 	 val_acc:91.62999725341797 	 train_loss:0.014099955558776855 	 val_loss:0.21811361610889435
+第69个epoch的学习率：0.000232
+epoch:69/100 	 train_acc:99.22200012207031 	 val_acc:91.63999938964844 	 train_loss:0.011142319068312645 	 val_loss:0.15942271053791046
+第70个epoch的学习率：0.000219
+epoch:70/100 	 train_acc:99.27399444580078 	 val_acc:91.65999603271484 	 train_loss:0.009410442784428596 	 val_loss:0.6659876704216003
+第71个epoch的学习率：0.000206
+epoch:71/100 	 train_acc:99.3280029296875 	 val_acc:91.65999603271484 	 train_loss:0.001171909854747355 	 val_loss:0.32972443103790283
+第72个epoch的学习率：0.000194
+epoch:72/100 	 train_acc:99.33999633789062 	 val_acc:91.30999755859375 	 train_loss:0.0025605037808418274 	 val_loss:0.22655749320983887
+第73个epoch的学习率：0.000181
+epoch:73/100 	 train_acc:99.38800048828125 	 val_acc:91.25999450683594 	 train_loss:0.004146876744925976 	 val_loss:0.19507759809494019
+第74个epoch的学习率：0.000169
+epoch:74/100 	 train_acc:99.4439926147461 	 val_acc:91.4699935913086 	 train_loss:0.018962372094392776 	 val_loss:0.061278700828552246
+第75个epoch的学习率：0.000158
+epoch:75/100 	 train_acc:99.4280014038086 	 val_acc:91.55999755859375 	 train_loss:0.0013264801818877459 	 val_loss:0.14950615167617798
+第76个epoch的学习率：0.000146
+epoch:76/100 	 train_acc:99.45999908447266 	 val_acc:91.5999984741211 	 train_loss:0.005036472342908382 	 val_loss:0.3524629771709442
+第77个epoch的学习率：0.000136
+epoch:77/100 	 train_acc:99.53199768066406 	 val_acc:91.92999267578125 	 train_loss:0.010674538090825081 	 val_loss:0.48986998200416565
+第78个epoch的学习率：0.000125
+epoch:78/100 	 train_acc:99.55999755859375 	 val_acc:91.68999481201172 	 train_loss:0.0032124314457178116 	 val_loss:0.3506297469139099
+第79个epoch的学习率：0.000115
+epoch:79/100 	 train_acc:99.64999389648438 	 val_acc:91.69999694824219 	 train_loss:0.006019935943186283 	 val_loss:0.302627295255661
+第80个epoch的学习率：0.000105
+epoch:80/100 	 train_acc:99.62799835205078 	 val_acc:91.83999633789062 	 train_loss:0.03402867913246155 	 val_loss:0.4763997793197632
+第81个epoch的学习率：0.000095
+epoch:81/100 	 train_acc:99.66799926757812 	 val_acc:91.55999755859375 	 train_loss:0.011654104106128216 	 val_loss:0.5215071439743042
+第82个epoch的学习率：0.000086
+epoch:82/100 	 train_acc:99.67399597167969 	 val_acc:91.69999694824219 	 train_loss:0.0014716519508510828 	 val_loss:0.636430561542511
+第83个epoch的学习率：0.000078
+epoch:83/100 	 train_acc:99.69200134277344 	 val_acc:91.72999572753906 	 train_loss:0.002505237003788352 	 val_loss:0.5322591066360474
+第84个epoch的学习率：0.000070
+epoch:84/100 	 train_acc:99.71399688720703 	 val_acc:91.6199951171875 	 train_loss:0.0014180808793753386 	 val_loss:0.3760775923728943
+第85个epoch的学习率：0.000062
+epoch:85/100 	 train_acc:99.70800018310547 	 val_acc:91.67999267578125 	 train_loss:0.02969118021428585 	 val_loss:0.6299030780792236
+第86个epoch的学习率：0.000054
+epoch:86/100 	 train_acc:99.78999328613281 	 val_acc:91.8699951171875 	 train_loss:0.0331779383122921 	 val_loss:0.5745547413825989
+第87个epoch的学习率：0.000048
+epoch:87/100 	 train_acc:99.77799987792969 	 val_acc:91.87999725341797 	 train_loss:0.022036263719201088 	 val_loss:0.4742087125778198
+第88个epoch的学习率：0.000041
+epoch:88/100 	 train_acc:99.81599426269531 	 val_acc:91.8699951171875 	 train_loss:0.0022244402207434177 	 val_loss:0.5444560647010803
+第89个epoch的学习率：0.000035
+epoch:89/100 	 train_acc:99.78399658203125 	 val_acc:91.85999298095703 	 train_loss:0.004777869675308466 	 val_loss:0.5071542859077454
+第90个epoch的学习率：0.000030
+epoch:90/100 	 train_acc:99.81399536132812 	 val_acc:91.8499984741211 	 train_loss:0.006053064949810505 	 val_loss:0.5005420446395874
+第91个epoch的学习率：0.000024
+epoch:91/100 	 train_acc:99.79199981689453 	 val_acc:91.8499984741211 	 train_loss:0.0032226969487965107 	 val_loss:0.4024873673915863
+第92个epoch的学习率：0.000020
+epoch:92/100 	 train_acc:99.82599639892578 	 val_acc:91.95999145507812 	 train_loss:0.0007959462818689644 	 val_loss:0.3958699405193329
+第93个epoch的学习率：0.000016
+epoch:93/100 	 train_acc:99.86199951171875 	 val_acc:91.78999328613281 	 train_loss:0.0004969173460267484 	 val_loss:0.4621463418006897
+第94个epoch的学习率：0.000012
+epoch:94/100 	 train_acc:99.83599853515625 	 val_acc:91.94999694824219 	 train_loss:0.0010160503443330526 	 val_loss:0.4902658462524414
+第95个epoch的学习率：0.000009
+epoch:95/100 	 train_acc:99.83200073242188 	 val_acc:91.81999206542969 	 train_loss:0.01653437130153179 	 val_loss:0.4547337591648102
+第96个epoch的学习率：0.000006
+epoch:96/100 	 train_acc:99.86799621582031 	 val_acc:91.8899917602539 	 train_loss:0.06834251433610916 	 val_loss:0.462618350982666
+第97个epoch的学习率：0.000004
+epoch:97/100 	 train_acc:99.86399841308594 	 val_acc:91.85999298095703 	 train_loss:0.030452605336904526 	 val_loss:0.4353581964969635
+第98个epoch的学习率：0.000002
+epoch:98/100 	 train_acc:99.85800170898438 	 val_acc:91.89999389648438 	 train_loss:0.001058510271832347 	 val_loss:0.464339941740036
+第99个epoch的学习率：0.000001
+epoch:99/100 	 train_acc:99.85800170898438 	 val_acc:91.82999420166016 	 train_loss:0.00020991972996853292 	 val_loss:0.5255258083343506
+第100个epoch的学习率：0.000000
+epoch:100/100 	 train_acc:99.86399841308594 	 val_acc:91.85999298095703 	 train_loss:0.0017635745462030172 	 val_loss:0.5123699903488159
+模型保存成功:model.pth
+训练完成
